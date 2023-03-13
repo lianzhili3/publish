@@ -21,7 +21,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  // mode: 'history',
+  mode: 'hash',//js报错，试一下这个方式
   // base: process.env.BASE_URL,
   base:'/admin/',
   routes
