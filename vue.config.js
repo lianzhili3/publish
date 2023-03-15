@@ -22,6 +22,12 @@ module.exports = defineConfig({
   
   devServer: {
        proxy: 'http://47.101.146.135:8089'
-     }, 
+     },
+
+    // chainWebpack: config => {
+    //     config.resolve.alias
+    //         .set('_v', resolve('src/views')) // key,value自行定义，比如.set('@@', resolve('src/components'))
+    //         // .set('_c', resolve('src/components'))
+    // },
      
 })

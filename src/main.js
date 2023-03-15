@@ -4,6 +4,13 @@ import router from './router'
 import store from './store'
 
 import axios from 'axios';
+
+import iView from 'iview'
+import 'iview/dist/styles/iview.css'
+
+Vue.use(iView)
+
+
 Vue.prototype.$axios = axios //全局注册，使用方法为:this.$axios
 
 // import axios from './axios'
